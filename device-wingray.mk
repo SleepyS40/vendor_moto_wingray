@@ -17,4 +17,10 @@ LOCAL_PATH := vendor/moto/stingray
 # Broadcom blobs necessary for wingray hardware
 PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/proprietary/camera.stingray.so:system/lib/hw/camera.stingray.so \
-    $(LOCAL_PATH)/proprietary/gps.stingray.so:system/lib/hw/gps.stingray.so
+    $(LOCAL_PATH)/proprietary/gps.stingray.so:system/lib/hw/gps.stingray.so \
+    $(LOCAL_PATH)/proprietary/location:system/bin/location \
+    $(LOCAL_PATH)/proprietary/brcm_guci_drv:system/bin/brcm_guci_drv \
+    $(LOCAL_PATH)/proprietary/gps.conf:system/etc/gps.conf \
+    $(LOCAL_PATH)/proprietary/gpsconfig.xml:system/etc/gpsconfig.xml \
+    $(LOCAL_PATH)/proprietary/location.cfg:system/etc/location.cfg \
+    $(LOCAL_PATH)/proprietary/akmd2:system/bin/akmd2
