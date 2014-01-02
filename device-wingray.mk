@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := vendor/moto/stingray
+LOCAL_PATH := vendor/moto/wingray
 
 # Broadcom blobs necessary for wingray hardware
 PRODUCT_COPY_FILES := \
@@ -23,4 +23,7 @@ PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/proprietary/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/proprietary/gpsconfig.xml:system/etc/gpsconfig.xml \
     $(LOCAL_PATH)/proprietary/location.cfg:system/etc/location.cfg \
-    $(LOCAL_PATH)/proprietary/akmd2:system/bin/akmd2
+    $(LOCAL_PATH)/proprietary/akmd2:system/bin/akmd2 \
+    $(LOCAL_PATH)/proprietary/cpcap_gain.bin:system/etc/cpcap_gain.bin \
+    $(LOCAL_PATH)/proprietary/libmoto_ecnswrapper.so:system/lib/libmoto_ecnswrapper.so \
+    $(LOCAL_PATH)/proprietary/MotoLocationProxy.apk:system/app/MotoLocationProxy.apk

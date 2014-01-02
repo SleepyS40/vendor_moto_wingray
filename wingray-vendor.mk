@@ -13,12 +13,7 @@
 # limitations under the License.
 
 LOCAL_STEM := wingray/device-wingray.mk
-LOCAL_STEM2 := stingray/device-wingray.mk
 
 $(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/moto/$(LOCAL_STEM))
 $(call inherit-product-if-exists, vendor/nvidia/$(LOCAL_STEM))
-
-$(call inherit-product-if-exists, vendor/broadcom/$(LOCAL_STEM2))
-$(call inherit-product-if-exists, vendor/moto/$(LOCAL_STEM2))
-$(call inherit-product-if-exists, vendor/nvidia/$(LOCAL_STEM2))
