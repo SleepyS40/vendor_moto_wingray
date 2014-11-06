@@ -25,5 +25,7 @@ PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/proprietary/location.cfg:system/etc/location.cfg \
     $(LOCAL_PATH)/proprietary/akmd2:system/bin/akmd2 \
     $(LOCAL_PATH)/proprietary/cpcap_gain.bin:system/etc/cpcap_gain.bin \
-    $(LOCAL_PATH)/proprietary/libmoto_ecnswrapper.so:system/lib/libmoto_ecnswrapper.so \
-    $(LOCAL_PATH)/proprietary/MotoLocationProxy.apk:system/app/MotoLocationProxy.apk
+    $(LOCAL_PATH)/proprietary/libmoto_ecnswrapper.so:system/lib/libmoto_ecnswrapper.so
+
+PRODUCT_PACKAGES += \
+    MotoLocationProxy
